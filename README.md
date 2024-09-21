@@ -20,8 +20,8 @@
 
 <h2>Application Setup</h2>
 <ol>
-    <li>Install the required libraries:
-        <pre><code>pip install streamlit pandas</code></pre>
+    <li>Install the required libraries from the requirements file:
+        <pre><code>pip install -r requirements.txt</code></pre>
     </li>
     <li>Ensure you have the following pre-trained files in the same directory as the script:
         <ul>
