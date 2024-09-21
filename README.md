@@ -31,7 +31,7 @@
         </ul>
     </li>
     <li>Run the application:
-        <pre><code>streamlit run app.py</code></pre>
+        <pre><code>streamlit run application.py</code></pre>
     </li>
 </ol>
 
