@@ -18,7 +18,7 @@ with open('column_transformer.pkl', 'rb') as transformer_file:
 
 # Define categorical and numerical columns as used during model training
 categorical_features = ['Gender', 'Occupation', 'BMI Category']
-numerical_features = ['Person ID', 'Age', 'Sleep Duration', 'Quality of Sleep',
+numerical_features = ['Age', 'Sleep Duration', 'Quality of Sleep',
                       'Physical Activity Level', 'Stress Level', 'BP(Systolic)', 
                       'BP(Diastolic)', 'Heart Rate', 'Daily Steps']
 
@@ -29,7 +29,6 @@ occupations = [
 ]
 
 # Input fields for user to provide data
-person_id = st.text_input("Person ID", placeholder="Enter an integer (e.g., 101)")
 gender = st.selectbox("Gender", options=["Male", "Female"])
 age = st.text_input("Age", placeholder="Enter an integer (e.g., 25)")
 occupation = st.selectbox("Occupation", options=occupations)
@@ -54,7 +53,6 @@ if st.button("Predict Sleep Disorder"):
     try:
         # Prepare input data as a DataFrame
         input_df = pd.DataFrame({
-            'Person ID': [int(person_id) if person_id.isdigit() else 0],
             'Gender': [gender],
             'Age': [int(age) if age.isdigit() else 0],
             'Occupation': [occupation],
