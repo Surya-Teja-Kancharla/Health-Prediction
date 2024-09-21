@@ -36,7 +36,7 @@ sleep_duration = st.text_input("Sleep Duration", placeholder="Enter hours of sle
 quality_of_sleep = st.text_input("Quality of Sleep", placeholder="Enter a score from 1-10")
 physical_activity_level = st.text_input("Physical Activity Level", placeholder="Enter a score from 1-100")
 stress_level = st.text_input("Stress Level", placeholder="Enter a score from 1-10")
-bmi_category = st.selectbox("BMI Category", options=["Normal Weight", "Normal", "Overweight", "Obese"])
+bmi_category = st.selectbox("BMI Category", options=["Normal", "Overweight", "Obese"])
 blood_pressure = st.text_input("Blood Pressure", placeholder="Enter blood pressure in mmHg (e.g., 120/80)")
 heart_rate = st.text_input("Heart Rate", placeholder="Enter beats per minute (e.g., 70)")
 daily_steps = st.text_input("Daily Steps", placeholder="Enter the number of steps (e.g., 5000)")
